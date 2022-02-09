@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, inital=scale=1.0">
+  <title>Learning Vue</title>
+  <script src="https://umpkg.com/vue@3.0.2"></script>
+  </head>
+  <body>
+    <h1>Hello, Vue</h1>
+
+<div id="app">
+  <div v-if="showBooks">
+  <p>{{ titles}} - {{ author}} - {{age}}</p>
+
+  <button v-on:click="age++">Increase age></button>
+  <button v-on:click="age++">Decrease age></button>
+  <div @click="ChangeTitle">Increase age></div>
+  </div>
+
+  <div v-show="showBooks"> currently showing books</div>
+<script src="app.js"></script>
+    </body>
+    </html>
